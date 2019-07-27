@@ -1,0 +1,14 @@
+Instructions to run flex on Linux (working for Ubuntu)
+
+1.) sudo apt-get update
+2.) sudo apt-get install flex
+3.) Create a directory named 'Project' (just to organize your files since flex can get messy)
+4.) Create your .l file
+5.) Run: flex <filename>.l
+	-If you get any errors at this step, look back at your .l file.
+6.) Run: g++ lex.yy.c -lfl -o <filename> 
+	-<filename> can be anything. -o flag means your creating an executable file with 		<filename> as the name.
+	-If there are any errors at this step, go back to your .l file (may be C coding error)
+7.) Run ./<filename>
+	-Contents will be displayed in the terminal
+	-Run ./<filename> <filename>output.txt to save the output to a file.
